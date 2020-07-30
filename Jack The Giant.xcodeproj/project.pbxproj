@@ -50,6 +50,7 @@
 		8350747824D3103100215C2F /* Show Score.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350745724D3103100215C2F /* Show Score.png */; };
 		8350747924D3103100215C2F /* Pause Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350745824D3103100215C2F /* Pause Menu.png */; };
 		8350747A24D3103100215C2F /* Resume Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8350745924D3103100215C2F /* Resume Button.png */; };
+		8350747D24D318F300215C2F /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8350747C24D318F300215C2F /* GameplayScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		8350745724D3103100215C2F /* Show Score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Show Score.png"; sourceTree = "<group>"; };
 		8350745824D3103100215C2F /* Pause Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause Menu.png"; sourceTree = "<group>"; };
 		8350745924D3103100215C2F /* Resume Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resume Button.png"; sourceTree = "<group>"; };
+		8350747C24D318F300215C2F /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				835073F924D30DA100215C2F /* Jack The Giant */,
+				8350747B24D318C000215C2F /* Scenes */,
 				8350742E24D30FFF00215C2F /* Assets */,
 				8350741424D30DA200215C2F /* Jack The GiantTests */,
 				8350741F24D30DA200215C2F /* Jack The GiantUITests */,
@@ -321,6 +324,14 @@
 			path = "1 - Pause Panel And Buttons";
 			sourceTree = "<group>";
 		};
+		8350747B24D318C000215C2F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8350747C24D318F300215C2F /* GameplayScene.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +458,7 @@
 				8350746724D3103100215C2F /* Back Button.png in Resources */,
 				8350746F24D3103100215C2F /* Life Sound.wav in Resources */,
 				8350746224D3103100215C2F /* Highscore Button.png in Resources */,
+				8350747D24D318F300215C2F /* GameplayScene.sks in Resources */,
 				8350747724D3103100215C2F /* Quit Button 2.png in Resources */,
 				8350746A24D3103100215C2F /* Game BG.png in Resources */,
 				8350745C24D3103100215C2F /* Pause Button.png in Resources */,
