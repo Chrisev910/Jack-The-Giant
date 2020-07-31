@@ -21,6 +21,12 @@
 		8350748124D3257200215C2F /* GameplayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350748024D3257200215C2F /* GameplayScene.swift */; };
 		8350748624D32A8700215C2F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350748524D32A8700215C2F /* Player.swift */; };
 		8350748B24D3420D00215C2F /* Player.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8350748A24D3420D00215C2F /* Player.atlas */; };
+		8350748F24D4391000215C2F /* BGClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350748E24D4391000215C2F /* BGClass.swift */; };
+		8350749224D443C600215C2F /* CloudsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350749124D443C600215C2F /* CloudsController.swift */; };
+		8350749424D4881300215C2F /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8350749324D4881300215C2F /* MainMenu.sks */; };
+		8350749624D4928100215C2F /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350749524D4928100215C2F /* MainMenuScene.swift */; };
+		8350749824D4957100215C2F /* HighScoreScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8350749724D4957100215C2F /* HighScoreScene.sks */; };
+		83E3090324D498C8007AB1FC /* blow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83E3090224D498C8007AB1FC /* blow.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +67,12 @@
 		8350748024D3257200215C2F /* GameplayScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayScene.swift; sourceTree = "<group>"; };
 		8350748524D32A8700215C2F /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8350748A24D3420D00215C2F /* Player.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Player.atlas; sourceTree = "<group>"; };
+		8350748E24D4391000215C2F /* BGClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGClass.swift; sourceTree = "<group>"; };
+		8350749124D443C600215C2F /* CloudsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudsController.swift; sourceTree = "<group>"; };
+		8350749324D4881300215C2F /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		8350749524D4928100215C2F /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		8350749724D4957100215C2F /* HighScoreScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HighScoreScene.sks; sourceTree = "<group>"; };
+		83E3090224D498C8007AB1FC /* blow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blow.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +105,9 @@
 			children = (
 				835073F924D30DA100215C2F /* Jack The Giant */,
 				8350747E24D324E600215C2F /* Game Classes */,
-				8350748C24D3421400215C2F /* AtlasFiles */,
 				8350747B24D318C000215C2F /* Scenes */,
+				83E3090424D498D8007AB1FC /* Fonts */,
+				8350748C24D3421400215C2F /* AtlasFiles */,
 				8350741424D30DA200215C2F /* Jack The GiantTests */,
 				8350741F24D30DA200215C2F /* Jack The GiantUITests */,
 				835073F824D30DA100215C2F /* Products */,
@@ -149,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				8350747C24D318F300215C2F /* GameplayScene.sks */,
+				8350749324D4881300215C2F /* MainMenu.sks */,
+				8350749724D4957100215C2F /* HighScoreScene.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -156,6 +171,8 @@
 		8350747E24D324E600215C2F /* Game Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8350749024D4439D00215C2F /* Clouds Classes */,
+				8350748D24D438E500215C2F /* Background Class */,
 				8350748424D32A7000215C2F /* Player Class */,
 				8350747F24D324FF00215C2F /* Scene Classes */,
 			);
@@ -166,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8350748024D3257200215C2F /* GameplayScene.swift */,
+				8350749524D4928100215C2F /* MainMenuScene.swift */,
 			);
 			path = "Scene Classes";
 			sourceTree = "<group>";
@@ -184,6 +202,30 @@
 				8350748A24D3420D00215C2F /* Player.atlas */,
 			);
 			path = AtlasFiles;
+			sourceTree = "<group>";
+		};
+		8350748D24D438E500215C2F /* Background Class */ = {
+			isa = PBXGroup;
+			children = (
+				8350748E24D4391000215C2F /* BGClass.swift */,
+			);
+			path = "Background Class";
+			sourceTree = "<group>";
+		};
+		8350749024D4439D00215C2F /* Clouds Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8350749124D443C600215C2F /* CloudsController.swift */,
+			);
+			path = "Clouds Classes";
+			sourceTree = "<group>";
+		};
+		83E3090424D498D8007AB1FC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				83E3090224D498C8007AB1FC /* blow.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,13 +332,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E3090324D498C8007AB1FC /* blow.ttf in Resources */,
 				8350740624D30DA100215C2F /* Main.storyboard in Resources */,
 				835073FD24D30DA100215C2F /* GameScene.sks in Resources */,
 				8350740824D30DA200215C2F /* Assets.xcassets in Resources */,
 				8350740B24D30DA200215C2F /* LaunchScreen.storyboard in Resources */,
 				8350747D24D318F300215C2F /* GameplayScene.sks in Resources */,
+				8350749424D4881300215C2F /* MainMenu.sks in Resources */,
 				8350748B24D3420D00215C2F /* Player.atlas in Resources */,
 				835073FF24D30DA100215C2F /* Actions.sks in Resources */,
+				8350749824D4957100215C2F /* HighScoreScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,10 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8350748124D3257200215C2F /* GameplayScene.swift in Sources */,
+				8350749224D443C600215C2F /* CloudsController.swift in Sources */,
 				8350740124D30DA100215C2F /* GameScene.swift in Sources */,
 				8350740324D30DA100215C2F /* GameViewController.swift in Sources */,
 				8350748624D32A8700215C2F /* Player.swift in Sources */,
 				835073FB24D30DA100215C2F /* AppDelegate.swift in Sources */,
+				8350749624D4928100215C2F /* MainMenuScene.swift in Sources */,
+				8350748F24D4391000215C2F /* BGClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

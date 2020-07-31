@@ -8,6 +8,12 @@
 
 import SpriteKit
 
+struct ColliderType {
+    static let Player: UInt32 = 0;
+    static let Cloud: UInt32 = 1;
+    static let DarkCloudAndCollectibles: UInt32 = 2;
+}
+
 class Player: SKSpriteNode {
     
     private var textureAtlas = SKTextureAtlas();
@@ -25,6 +31,20 @@ class Player: SKSpriteNode {
         }
         
         animatePlayerAction = SKAction.animate(with: playerAnimation, timePerFrame: 0.08, resize: true, restore: false);
+        
+        
+        //Add physics body to player for collision detection and collectables and also apply gravity.
+        self.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: self.size.width - 50, height: self.size.height - 5));
+        self.physicsBody?.affectedByGravity = true;
+        //stop falling off with rotation
+        self.physicsBody?.allowsRotation = false;
+        self.physicsBody?.restitution = 0;
+        self.physicsBody?.categoryBitMask = ColliderType.Player;
+        self.physicsBody?.collisionBitMask = ColliderType.Cloud;
+        self.physicsBody?.contactTestBitMask = ColliderType.DarkCloudAndCollectibles;
+        
+        
+        
     }
     
     func animatePlayer(moveLeft: Bool) {
@@ -50,9 +70,9 @@ class Player: SKSpriteNode {
     func movePlayer(moveLeft: Bool) {
         
         if moveLeft {
-            self.position.x = self.position.x - 7;
+            self.position.x -= 7;
         } else {
-            self.position.x = self.position.x + 7;
+            self.position.x += 7;
         }
         
     }
